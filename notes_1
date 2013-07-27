@@ -1,8 +1,139 @@
 git init
+
 git clone
+
 git status
+
 git add <file>
+
 git rm --cached <file>
+
 git commit -m "fist commit"
+
 git commit
+
 git log
+
+git commit --amend     => modify previous commit message
+
+Notice: empty folder won't be committed!
+if you want to commit a empty folder, put an empty ".gitkeep" file in it by convention
+
+git log --pretty=oneline
+
+Notice: you can find git log style in itnernet
+
+git log --pretty=format:"%h %s"
+
+git help log
+
+git rm 
+
+Exercise: remove a file and then checkout it BACK. => git rm, git checkout --<file>
+
+git tag
+
+Notice: tag is a milestone
+
+git branch
+
+Notice: branching is very cheap
+
+[git branch sample]
+---------------------------------------
+[IRS@localhost ossf]$ git branch
+* master
+[IRS@localhost ossf]$ git branch ossf
+[IRS@localhost ossf]$ git branch
+* master
+  ossf
+[IRS@localhost ossf]$ git checkout ossf
+Switched to branch 'ossf'
+[IRS@localhost ossf]$ 
+---------------------------------------
+
+git checkout <branchName> => 
+
+git branch -D ossf => delete branch
+
+Notice: Taipei-MRT-in-Git
+
+git checkout <tagName>
+
+git merge <branchName> => return to master and merge the branch
+
+[git merge sample]
+--------------------------------------------------------
+[IRS@localhost ossf]$ git checkout master
+Switched to branch 'master'
+[IRS@localhost ossf]$ git log
+commit 46ac53c3288ea96446b0e6cb7e2cfc440f7ee48c
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:14:39 2013 +0800
+
+    add empty folder
+
+commit 63d7872ff52df20bba90e85503f41c2adb9a9058
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:06:43 2013 +0800
+
+    wtf bug..----amend...
+
+commit c3206fb562ffa84e04a8fe44294ad057cbdd0a92
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:00:14 2013 +0800
+
+    2nd commit
+
+commit 34739b4a02c8fc45d27acd45f0bccf097dcb298d
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 10:56:57 2013 +0800
+
+    fist commit
+[IRS@localhost ossf]$ git merge fruit
+Updating 46ac53c..991feff
+Fast-forward
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 banana.rb
+[IRS@localhost ossf]$ git log
+commit 991feffb312a0a8a760606d36267ee3b38872e44
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:34:58 2013 +0800
+
+    add banana.rb in fruit branch
+
+commit 46ac53c3288ea96446b0e6cb7e2cfc440f7ee48c
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:14:39 2013 +0800
+
+    add empty folder
+
+commit 63d7872ff52df20bba90e85503f41c2adb9a9058
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:06:43 2013 +0800
+
+    wtf bug..----amend...
+
+commit c3206fb562ffa84e04a8fe44294ad057cbdd0a92
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 11:00:14 2013 +0800
+
+    2nd commit
+
+commit 34739b4a02c8fc45d27acd45f0bccf097dcb298d
+Author: akiraliu <akiraliu@gmail.com>
+Date:   Sat Jul 27 10:56:57 2013 +0800
+
+    fist commit
+
+------------------------------------------------------------
+
+
+git pull
+
+Notice: git pull = git fetch + git merge
+
+
+
+
+
