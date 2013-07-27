@@ -134,6 +134,27 @@ git pull
 Notice: git pull = git fetch + git merge
 
 
+Notice: BitBucket => unlimited private repository
 
 
+
+[Create a new repository on the command line]
+----------------------------------------------
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/akiraliu/ossf.git
+git push -u origin master
+----------------------------------------------
+
+[Push an existing repository from the command line]
+----------------------------------------------
+git remote add origin https://github.com/akiraliu/ossf.git
+git push -u origin master
+----------------------------------------------
+
+
+
+Notice: c9s => https://github.com/c9s
 
