@@ -158,3 +158,28 @@ git push -u origin master
 
 Notice: c9s => https://github.com/c9s
 
+
+
+
+git push origin master
+git pull
+
+Notice: git pull = git fetch + git merge
+
+
+Notice: GUI git tool => SourceTree, tortoisegit
+
+
+git push origin my-branch => push branch
+
+git clean
+
+git stash
+
+git remote
+
+Reading References:
+1. Pro Git
+2. ihower's blog: ihower.tw/git/
+
+
