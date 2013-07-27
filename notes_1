@@ -6,6 +6,8 @@ git status
 
 git add <file>
 
+git add . => add all
+
 git rm --cached <file>
 
 git commit -m "fist commit"
@@ -166,7 +168,6 @@ git pull
 
 Notice: git pull = git fetch + git merge
 
-
 Notice: GUI git tool => SourceTree, tortoisegit
 
 
@@ -181,5 +182,68 @@ git remote
 Reading References:
 1. Pro Git
 2. ihower's blog: ihower.tw/git/
+
+git rebase
+
+git rebase -i
+
+
+
+---------------------------------------------------------------
+
+Git Flow:
+[installation]
+on Mac
+> brew install git-flow
+on Ubuntu or some linux OS
+> sudo apt-get install git-flow
+
+https://github.com/nvie/gitflow
+
+git flow init
+-----------------------------------------------------------
+[IRS@localhost ~]$ git init aaa
+Initialized empty Git repository in /home/IRS/aaa/.git/
+[IRS@localhost ~]$ cd aaa
+[IRS@localhost aaa]$ git flow init
+No branches exist yet. Base branches must be created now.
+Branch name for production releases: [master] 
+Branch name for "next release" development: [develop] 
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/] 
+Release branches? [release/] 
+Hotfix branches? [hotfix/] 
+Support branches? [support/] 
+Version tag prefix? [] 
+[IRS@localhost aaa]$ 
+-----------------------------------------------------------
+
+add a new feature:
+> git flow feature start
+whne done with the new feature:
+> git flow feature finish
+
+
+
+git push --tags     => push wih tag info (git push will not push tag info)
+
+
+=============================================================================
+
+
+[Github]
+a git repository server
+coders' facebook :)
+resume for coders!
+SSH/HTTPS/GIT
+public => free, private => paid
+
+
+SSH Key
+
+
+
+
 
 
